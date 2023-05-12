@@ -1,0 +1,15 @@
+.App {
+   /* background-image: url("./components/Imagenes/Astronomia_sitios_web-1000x600.webp"); */
+   background-repeat:no-repeat;
+   background-color: black;
+   background-position: center center;
+   background-size: cover;
+   background-attachment: fixed;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   color: white;
+  
+}
+
+

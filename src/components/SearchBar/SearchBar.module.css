@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    
+}
+.input{
+    margin-left: 50%;
+    border-radius: 15px;
+    width: 30%;
+    height: 6%;
+    font-size: 18px;
+}
+
+.button{
+    font-size: 18px;
+}
+
+
+.logo{
+width: 15%
+    
+}
