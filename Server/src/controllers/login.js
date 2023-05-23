@@ -5,10 +5,10 @@ const login = (req, res) => {
     const userFound = users.find((user) => user.email === email && user.password === password)
 
     userFound
-        ? res.json({ access: true })
-        : res.json({ access: false })
+        ? res.status(200).json({ access: true })
+        : res.status(400).json({ access: false })
 }
 
 module.exports = {
     login
-}
+};
