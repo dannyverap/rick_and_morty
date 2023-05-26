@@ -5,19 +5,19 @@ import { useState, useEffect } from "react";
 
 const Detail = () => {
 
-    const {id} = useParams();
+    const { id } = useParams();
     const [character, setCharacter] = useState({})
-    
+
     useEffect(() => {
         axios(`http://localhost:3001/rickandmorty/character/${id}`)
-        .then(({ data }) => {
-            if (data.name) {
-                setCharacter(data);
-                
-            } else {
-                window.alert('No hay personajes con ese ID');
-            }
-        });
+            .then(({ data }) => {
+                if (data.name) {
+                    setCharacter(data);
+
+                } else {
+                    window.alert('No hay personajes con ese ID');
+                }
+            });
         return setCharacter({});
     }, [id]);
 
@@ -30,7 +30,7 @@ const Detail = () => {
             <h1> Species: "{character?.species}"</h1>
             <h1> Gender: "{character.gender && character.gender}"</h1>
             <h1> Origins: "{character?.origin?.name && character.origin?.name}"</h1>
-            <img src={character?.image} alt=""/>
+            <img src={character?.image} alt="" />
         </div>
     )
 }
